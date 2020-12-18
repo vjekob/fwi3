@@ -4,5 +4,6 @@ This repository is a collection of demos for the "Fun with Interfaces, episode 3
 
 This is what each branch is (or does):
 * `demo-01`: Shows a typical approach to testing, and explains their problems
-* `demo-02`: Explains a concept of test doubles (mocks, fakes, and stubs)
-* `demo-03`: Puts test doubles to use in testability
+* `demo-02`: More functionality results in more tightly-bound tests - and this time it's even worse!
+* `demo-04`: Introduces the concept of test doubles
+* `demo-08`: Puts three kinds of test doubles to use in testability: stubs, mocks, fakes
