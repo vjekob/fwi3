@@ -31,6 +31,7 @@ codeunit 50121 "Exch. Rate. Mgt. - Better"
     local procedure SetUpCurrencyConversionTest(FromCurrency: Code[10]; ToCurrency: Code[10]; Rate: Decimal)
     var
         ExchRate: Record "Currency Exchange Rate";
+        Setup: Record "Demo Currency Exch. Permission";
     begin
         ExchRate."Currency Code" := FromCurrency;
         ExchRate."Relational Currency Code" := ToCurrency;
@@ -38,5 +39,11 @@ codeunit 50121 "Exch. Rate. Mgt. - Better"
         ExchRate."Relational Exch. Rate Amount" := 1;
         ExchRate."Starting Date" := Today();
         ExchRate.Insert();
+
+        Setup."From Currency Code" := FromCurrency;
+        Setup."To Currency Code" := ToCurrency;
+        Setup."User ID" := UserId();
+        Setup.Permission := "Demo Permission Type"::Allow;
+        Setup.Insert();
     end;
 }
