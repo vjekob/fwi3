@@ -2,7 +2,7 @@
   "id": "61f4e3c5-8335-4512-899e-bc31cbfa7664",
   "name": "Vjeko.live Currency Conversion - Test Tool",
   "publisher": "Vjeko.live",
-  "version": "1.0.0.1",
+  "version": "1.0.0.2",
   "brief": "",
   "description": "",
   "privacyStatement": "",
@@ -21,7 +21,7 @@
       "id": "caaed2e8-e22c-4fcc-afd7-7dd3e42a7941",
       "name": "Vjeko.live Currency Conversion",
       "publisher": "Vjeko.live",
-      "version": "1.0.0.1"
+      "version": "1.0.0.2"
     }
   ],
   "screenshots": [],
