@@ -124,7 +124,7 @@ codeunit 50121 "Exch. Rate. Management"
         Assert.AreEqual(true, Logger.IsCalled(), 'Logger was not called');
     end;
 
-    local procedure RunTestWithSecurity(FromCurrencyCode: Code[10]; ToCurrencyCode: Code[10]; PassesSecurity: Boolean; Security: Codeunit "Fake Permission Checker")
+    local procedure RunTestWithSecurity(FromCurrencyCode: Code[10]; ToCurrencyCode: Code[10]; PassesSecurity: Boolean; Security: Interface "Demo IPermissionChecker")
     var
         ExchRateMgt: Codeunit "Demo Exchange Rate Management";
         Assert: Codeunit Assert;
