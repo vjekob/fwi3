@@ -1,8 +1,5 @@
 codeunit 50122 "Stub Converter" implements "Demo IConverter"
 {
-    // Unfortunately, because AL does not allow controlling the instantiation of enum-bound codeunits, this must be single-instance
-    SingleInstance = true;
-
     var
         Rate: Decimal;
 
