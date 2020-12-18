@@ -44,6 +44,7 @@ codeunit 50121 "Exch. Rate. Mgt. - Better"
         Setup."To Currency Code" := ToCurrency;
         Setup."User ID" := UserId();
         Setup.Permission := "Demo Permission Type"::Allow;
-        Setup.Insert();
+        if not Setup.Insert() then
+            Setup.Modify();
     end;
 }
