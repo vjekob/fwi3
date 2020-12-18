@@ -7,3 +7,5 @@ This is what each branch is (or does):
 * `demo-02`: More functionality results in more tightly-bound tests - and this time it's even worse!
 * `demo-04`: Introduces the concept of test doubles
 * `demo-08`: Puts three kinds of test doubles to use in testability: stubs, mocks, fakes
+
+This repository also closely follows the repository at https://github.com/vjekob/fwi2. Each branch in this repository contains unit tests for the branch of the same name in that other repository.
